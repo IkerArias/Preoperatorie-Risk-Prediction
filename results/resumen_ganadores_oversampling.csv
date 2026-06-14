@@ -1,0 +1,3 @@
+Target,Técnica,Modelo,GS PR-AUC,GS AUC-ROC,GS Recall,GS F1,KF PR-AUC,KF Std,Params
+MORTALIDAD,SMOTEENN,GaussianNB,0.2346,0.8377,0.6697,0.1102,0.2187,0.0128,{'var_smoothing': 1e-05}
+UCI,SMOTEENN,GaussianNB,0.2203,0.8278,0.5405,0.1363,0.2622,0.0251,{'var_smoothing': 1e-05}

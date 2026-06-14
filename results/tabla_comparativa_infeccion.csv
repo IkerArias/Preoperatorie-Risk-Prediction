@@ -1,0 +1,22 @@
+Fase,Modelo,Accuracy,Precision,Recall,F1,AUC-ROC,PR-AUC,Sensitivity,Specificity,Info
+Baseline,XGBoost,0.959,0.2899,0.241,0.2632,0.7927,0.2299,0.241,0.9815,Params fijos
+Baseline,RandomForest,0.959,0.2958,0.253,0.2727,0.7959,0.2214,0.253,0.9811,Params fijos
+Baseline,GradientBoosting,0.955,0.2727,0.2892,0.2807,0.7817,0.2323,0.2892,0.9758,Params fijos
+Baseline,LogisticRegression,0.9049,0.1635,0.5181,0.2486,0.7611,0.1449,0.5181,0.917,Params fijos
+Baseline,GaussianNB,0.7988,0.0939,0.6506,0.1641,0.7464,0.236,0.6506,0.8034,Params fijos
+Baseline,ExtraTrees,0.9458,0.2269,0.3253,0.2673,0.7956,0.2243,0.3253,0.9653,Params fijos
+Baseline,LightGBM,0.9612,0.3175,0.241,0.274,0.7934,0.2373,0.241,0.9838,Params fijos
+K-Fold (5),XGBoost,0.9618,0.3494,0.2758,0.3059,0.8537,0.2489,0.2758,0.9832,+/-0.0594 (PR-AUC std)
+K-Fold (5),RandomForest,0.9616,0.3235,0.2424,0.2765,0.8555,0.2409,0.2424,0.984,+/-0.0471 (PR-AUC std)
+K-Fold (5),GradientBoosting,0.959,0.3047,0.2667,0.2833,0.857,0.2416,0.2667,0.9806,+/-0.0638 (PR-AUC std)
+K-Fold (5),LogisticRegression,0.9124,0.1903,0.5758,0.2857,0.8425,0.2335,0.5758,0.9229,+/-0.0558 (PR-AUC std)
+K-Fold (5),GaussianNB,0.8067,0.1089,0.7485,0.19,0.8292,0.3279,0.7485,0.8085,+/-0.0384 (PR-AUC std)
+K-Fold (5),ExtraTrees,0.953,0.2788,0.3333,0.3017,0.8497,0.2435,0.3333,0.9723,+/-0.0638 (PR-AUC std)
+K-Fold (5),LightGBM,0.9617,0.3325,0.2455,0.2809,0.8576,0.2511,0.2455,0.9841,+/-0.0548 (PR-AUC std)
+GridSearch,XGBoost,0.9576,0.2963,0.2892,0.2927,0.7928,0.2393,0.2892,0.9785,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.8}"
+GridSearch,RandomForest,0.9539,0.2471,0.253,0.25,0.8024,0.2125,0.253,0.9758,"{'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 200}"
+GridSearch,GradientBoosting,0.9565,0.3,0.3253,0.3121,0.7851,0.2446,0.3253,0.9762,"{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}"
+GridSearch,LogisticRegression,0.9038,0.1565,0.494,0.2377,0.7411,0.1328,0.494,0.9166,"{'C': 10.0, 'penalty': 'l1'}"
+GridSearch,GaussianNB,0.7988,0.0939,0.6506,0.1641,0.7464,0.236,0.6506,0.8034,{'var_smoothing': 1e-09}
+GridSearch,ExtraTrees,0.9382,0.2055,0.3614,0.262,0.7965,0.2079,0.3614,0.9562,"{'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 100}"
+GridSearch,LightGBM,0.9605,0.3333,0.3012,0.3165,0.7881,0.2472,0.3012,0.9811,"{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 63}"

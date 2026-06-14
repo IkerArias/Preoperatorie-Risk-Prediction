@@ -1,0 +1,10 @@
+tecnica,modelo,cv_pr_auc,test_pr_auc,auc_roc,f1,recall,best_params,tiempo_seg
+SMOTEENN,XGBoost,0.2719,0.2393,0.7928,0.2927,0.2892,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'subsample': 0.8}",8.0
+SMOTEENN,LightGBM,0.2669,0.2472,0.7881,0.3165,0.3012,"{'learning_rate': 0.05, 'max_depth': 5, 'n_estimators': 100, 'num_leaves': 31}",5.1
+SMOTEENN,GaussianNB,0.1361,0.236,0.7464,0.1641,0.6506,{'var_smoothing': 1e-09},1.3
+SMOTE,XGBoost,0.2641,0.2183,0.7897,0.1416,0.0964,"{'learning_rate': 0.05, 'max_depth': 6, 'n_estimators': 100, 'subsample': 0.8}",2.6
+SMOTE,LightGBM,0.2603,0.2472,0.7879,0.2115,0.1325,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'num_leaves': 15}",1.5
+SMOTE,GaussianNB,0.132,0.2022,0.7369,0.1702,0.5783,{'var_smoothing': 1e-06},0.3
+RandomOverSampler,XGBoost,0.2747,0.225,0.7989,0.2821,0.3976,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}",1.6
+RandomOverSampler,LightGBM,0.2641,0.2201,0.7959,0.2991,0.4217,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}",1.2
+RandomOverSampler,GaussianNB,0.1267,0.211,0.7602,0.1832,0.5904,{'var_smoothing': 1e-07},0.2

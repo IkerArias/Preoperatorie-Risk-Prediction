@@ -1,0 +1,7 @@
+modelo,tipo,f1_macro,f1_weighted,accuracy,cv_f1_macro
+XGBoost,7_clases_global,0.1784,0.9405,0.9305,0.1918
+LightGBM,7_clases_global,0.1773,0.9108,0.8752,0.1963
+RandomForest,7_clases_global,0.1951,0.9584,0.9627,0.2099
+LightGBM,6_clases_condicional,0.2793,0.4497,0.4699,0.2803
+RandomForest,6_clases_condicional,0.3368,0.4699,0.4819,0.3326
+XGBoost,6_clases_condicional,0.2676,0.4658,0.5422,0.246

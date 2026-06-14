@@ -1,0 +1,43 @@
+Target,Fase,Modelo,Accuracy,Precision,Recall,F1,AUC-ROC,PR-AUC,Sensitivity,Specificity,Info,Tiempo_seg
+MORTALIDAD,Baseline,XGBoost,0.968,0.1391,0.1892,0.1603,0.8748,0.0955,0.1892,0.9808,Params fijos,
+MORTALIDAD,Baseline,RandomForest,0.9769,0.1983,0.1411,0.1649,0.892,0.1318,0.1411,0.9906,Params fijos,
+MORTALIDAD,Baseline,GradientBoosting,0.9712,0.1236,0.1291,0.1263,0.8779,0.0955,0.1291,0.985,Params fijos,
+MORTALIDAD,Baseline,LogisticRegression,0.9418,0.1158,0.3934,0.179,0.8791,0.1185,0.3934,0.9507,Params fijos,
+MORTALIDAD,Baseline,GaussianNB,0.863,0.0679,0.5886,0.1217,0.7898,0.1462,0.5886,0.8675,Params fijos,
+MORTALIDAD,Baseline,ExtraTrees,0.979,0.1656,0.0751,0.1033,0.885,0.1184,0.0751,0.9938,Params fijos,
+MORTALIDAD,Baseline,LightGBM,0.9698,0.1375,0.1652,0.1501,0.8778,0.0999,0.1652,0.983,Params fijos,
+UCI,Baseline,XGBoost,0.9623,0.1684,0.2162,0.1893,0.8635,0.1227,0.2162,0.9778,Params fijos,
+UCI,Baseline,RandomForest,0.9623,0.1461,0.1757,0.1595,0.8767,0.1224,0.1757,0.9786,Params fijos,
+UCI,Baseline,GradientBoosting,0.9633,0.1394,0.1554,0.147,0.8719,0.1137,0.1554,0.9801,Params fijos,
+UCI,Baseline,LogisticRegression,0.9434,0.1275,0.3041,0.1796,0.8667,0.1178,0.3041,0.9567,Params fijos,
+UCI,Baseline,GaussianNB,0.8971,0.0979,0.4932,0.1633,0.8428,0.1783,0.4932,0.9055,Params fijos,
+UCI,Baseline,ExtraTrees,0.962,0.1484,0.1824,0.1636,0.8783,0.1226,0.1824,0.9782,Params fijos,
+UCI,Baseline,LightGBM,0.9609,0.1531,0.2027,0.1744,0.8646,0.1199,0.2027,0.9767,Params fijos,
+MORTALIDAD,K-Fold (5),XGBoost,0.973,0.1409,0.1322,0.1358,0.8597,0.0933,0.1322,0.9868,±0.0068 (PR-AUC std),139.6
+MORTALIDAD,K-Fold (5),RandomForest,0.9758,0.1607,0.1194,0.1366,0.8838,0.1129,0.1194,0.9898,±0.0110 (PR-AUC std),139.9
+MORTALIDAD,K-Fold (5),GradientBoosting,0.9757,0.1523,0.1089,0.1261,0.8672,0.0944,0.1089,0.99,±0.0041 (PR-AUC std),163.0
+MORTALIDAD,K-Fold (5),LogisticRegression,0.9501,0.1326,0.3777,0.1959,0.8715,0.118,0.3777,0.9595,±0.0082 (PR-AUC std),140.8
+MORTALIDAD,K-Fold (5),GaussianNB,0.8471,0.0635,0.6088,0.1149,0.828,0.1683,0.6088,0.8511,±0.0199 (PR-AUC std),139.5
+MORTALIDAD,K-Fold (5),ExtraTrees,0.9796,0.1868,0.0781,0.1101,0.8838,0.114,0.0781,0.9944,±0.0045 (PR-AUC std),140.6
+MORTALIDAD,K-Fold (5),LightGBM,0.9746,0.1461,0.1187,0.1303,0.8623,0.0955,0.1187,0.9887,±0.0063 (PR-AUC std),141.2
+UCI,K-Fold (5),XGBoost,0.9608,0.1557,0.207,0.1775,0.8513,0.1105,0.207,0.9765,±0.0146 (PR-AUC std),6.0
+UCI,K-Fold (5),RandomForest,0.9641,0.1627,0.1818,0.1714,0.8775,0.1265,0.1818,0.9804,±0.0185 (PR-AUC std),5.7
+UCI,K-Fold (5),GradientBoosting,0.9651,0.1553,0.1582,0.1564,0.8564,0.1092,0.1582,0.982,±0.0096 (PR-AUC std),11.2
+UCI,K-Fold (5),LogisticRegression,0.9476,0.1597,0.3653,0.2222,0.8644,0.1282,0.3653,0.9598,±0.0145 (PR-AUC std),5.1
+UCI,K-Fold (5),GaussianNB,0.8763,0.0878,0.5369,0.1507,0.8295,0.1923,0.5369,0.8834,±0.0130 (PR-AUC std),5.3
+UCI,K-Fold (5),ExtraTrees,0.9604,0.1581,0.2137,0.1814,0.8762,0.131,0.2137,0.976,±0.0265 (PR-AUC std),5.5
+UCI,K-Fold (5),LightGBM,0.9645,0.1617,0.1767,0.1688,0.8531,0.1106,0.1767,0.9809,±0.0099 (PR-AUC std),6.6
+MORTALIDAD,GridSearch,XGBoost,0.9536,0.1422,0.3724,0.2058,0.8913,0.1278,0.3724,0.9632,"{'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}",2866.9
+MORTALIDAD,GridSearch,RandomForest,0.9755,0.1861,0.1532,0.168,0.8874,0.134,0.1532,0.989,"{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}",2217.1
+MORTALIDAD,GridSearch,GradientBoosting,0.9596,0.128,0.2583,0.1711,0.8877,0.1212,0.2583,0.9711,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}",1642.4
+MORTALIDAD,GridSearch,LogisticRegression,0.9441,0.123,0.4024,0.1885,0.8785,0.1166,0.4024,0.953,"{'C': 0.01, 'penalty': 'l1'}",538.9
+MORTALIDAD,GridSearch,GaussianNB,0.8631,0.0679,0.5886,0.1218,0.7899,0.1462,0.5886,0.8676,{'var_smoothing': 1e-05},369.2
+MORTALIDAD,GridSearch,ExtraTrees,0.9819,0.2588,0.0661,0.1053,0.8792,0.1225,0.0661,0.9969,"{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}",2232.1
+MORTALIDAD,GridSearch,LightGBM,0.9539,0.1415,0.3664,0.2042,0.8933,0.1275,0.3664,0.9636,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}",3097.8
+UCI,GridSearch,XGBoost,0.9517,0.1512,0.2973,0.2005,0.8782,0.1285,0.2973,0.9653,"{'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}",47.3
+UCI,GridSearch,RandomForest,0.9701,0.1584,0.1081,0.1285,0.8837,0.1186,0.1081,0.9881,"{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}",56.0
+UCI,GridSearch,GradientBoosting,0.9528,0.153,0.2905,0.2005,0.8743,0.1263,0.2905,0.9666,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}",64.1
+UCI,GridSearch,LogisticRegression,0.9448,0.129,0.2973,0.18,0.8698,0.1188,0.2973,0.9583,"{'C': 0.1, 'penalty': 'l1'}",9.0
+UCI,GridSearch,GaussianNB,0.8971,0.0979,0.4932,0.1633,0.8428,0.1783,0.4932,0.9055,{'var_smoothing': 1e-06},6.7
+UCI,GridSearch,ExtraTrees,0.9587,0.1607,0.2432,0.1935,0.8801,0.124,0.2432,0.9736,"{'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 100}",57.1
+UCI,GridSearch,LightGBM,0.9505,0.1419,0.2838,0.1892,0.8754,0.1262,0.2838,0.9643,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100, 'num_leaves': 15}",52.1

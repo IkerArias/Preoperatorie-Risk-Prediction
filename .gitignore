@@ -1,0 +1,61 @@
+# =============================================================================
+# DATA — Confidential patient data from Osakidetza (not to be shared)
+# =============================================================================
+data/data_raw/
+data/data_divided/
+data/data_normalized/
+data/*.xlsx
+data/*.csv
+
+# Patient-level intermediate matrices (derived from raw data)
+results/X_infeccion.csv
+results/y_infeccion_postop.csv
+
+# =============================================================================
+# CHECKPOINTS — Large binary model files (regenerate by running notebooks)
+# =============================================================================
+results/checkpoints/
+*.pkl
+
+# =============================================================================
+# LATEX MEMORY DOCUMENT — Private TFG write-up (Overleaf)
+# =============================================================================
+LATEX OVERLEAF/
+
+# =============================================================================
+# REPORTS — LaTeX draft files and potentially sensitive HTML
+# =============================================================================
+reports/*.tex
+reports/*.cls
+reports/*.bib
+reports/*.html
+
+# =============================================================================
+# LOOSE ROOT FILES
+# =============================================================================
+Siguientes pasos
+extracted_*.png
+
+# =============================================================================
+# macOS
+# =============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+venv/
+.venv/
+env/
