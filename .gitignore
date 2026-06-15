@@ -11,6 +11,10 @@ data/*.csv
 results/X_infeccion.csv
 results/y_infeccion_postop.csv
 
+# Figures in results/ (not tracked)
+results/*.png
+results/*.pdf
+
 # =============================================================================
 # CHECKPOINTS — Large binary model files (regenerate by running notebooks)
 # =============================================================================
